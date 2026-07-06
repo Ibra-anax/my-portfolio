@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My All Work | Ibrahim Anas</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="neon-glow-field" id="neonGlowField"></div>
+
+  <header class="header-main trigger-entry" id="navbar">
+    <nav class="container nav-inner">
+      <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">ANAS<span class="dot">.</span></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#work" class="active">Project</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right-actions">
+        <a href="index.html#contact" class="hire-btn">Hire me</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+          <span class="mode-icon">☀️</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sections-wrapper" style="padding-top: 140px;">
+    <section class="section">
+      <div class="container">
+        
+        <div class="section-header center">
+          <h1 class="hero-title" style="font-size: 52px; margin-bottom: 15px; margin-top: 0px; padding: 0;">All Works</h1>
+          <p class="section-subtitle" style="max-width: 650px; margin: 0 auto 40px; line-height: 1.7;">
+            Explore a curated selection of my design and projects.
+          </p>
+        </div>
+
+        <div class="filter-menu-wrapper center">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="app">APP Design</button>
+        </div>
+
+        <div class="works-marquee-container" style="margin-top: 40px;">
+          <div class="all-works-grid-layout" id="portfolioFilterGrid">
+            
+            <a href="https://www.figma.com/proto/KLfVtEPPIJvNoI9o5UgbU3/Untitled?node-id=2-2&p=f&viewport=-78%2C116%2C0.33&t=NadvnH4oyhNAJBPH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" style="text-decoration: none; color: inherit;">
+              <article class="project-card interactive-hover mix-target" data-category="web">
+                <div class="project-banner bg-gradient-1">
+                  <img src="01.png" alt="E-Commerce Interface Concept" style="width: 100%; height: 100%; object-fit: cover;" />
+                  <div class="mock-ui-layer"></div>
+                </div>
+                <div class="project-meta">
+                  <div class="project-details">
+                    <h3></h3>
+                    <p>this is a simple demo for the apple mobile showcase. </p>
+                  </div>
+                  <span class="project-tag-badge">UI/UX design</span>
+                </div>
+              </article>
+            </a>
+
+            <a href="https://www.figma.com/proto/mUqi6ixIy8TJGlqQU9lvTb?node-id=0-1" target="_blank" style="text-decoration: none; color: inherit;">
+              <article class="project-card interactive-hover mix-target" data-category="web">
+                <div class="project-banner bg-gradient-2">
+                  <img src="02.png" alt="Corporate Business Portfolio" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div class="project-meta">
+                  <div class="project-details">
+                    <h3></h3>
+                    <p>this is a simple demo for the business portfolio.</p>
+                  </div>
+                  <span class="project-tag-badge">UI/UX design</span>
+                </div>
+              </article>
+            </a>
+
+            <a href="https://www.figma.com/proto/fad90QYt07AOMY4Oe6VYmd/Untitled?node-id=185-369&p=f&viewport=252%2C-141%2C0.15&t=c0DIc9EL7F2lEEze-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=185%3A365&page-id=185%3A364" target="_blank" style="text-decoration: none; color: inherit;">
+              <article class="project-card interactive-hover mix-target" data-category="app">
+                <div class="project-banner bg-gradient-3">
+                  <img src="03.png" alt="Visual Identity Showcase" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div class="project-meta">
+                  <div class="project-details">
+                    <h3></h3>
+                    <p>this is a simple demo for the video shoot booking app showcase.</p>
+                  </div>
+                  <span class="project-tag-badge">UI/UX design</span>
+                </div>
+              </article>
+            </a>
+
+            <!-- <a href="" target="_blank" style="text-decoration: none; color: inherit;">
+              <article class="project-card interactive-hover mix-target" data-category="ui-ux">
+                <div class="project-banner bg-gradient-1">
+                  <img src="04.png" alt="Food Delivery Interface" style="width: 100%; height: 100%; object-fit: cover;" />
+                  <div class="mock-ui-layer"><i class="fas fa-pizza-slice"></i></div>
+                </div>
+                <div class="project-meta">
+                  <div class="project-details">
+                    <h3>Food Delivery Interface</h3>
+                    <p>An optimized hyper-local mobile app prototype focused on seamless user flows, real-time tracking interfaces, and clean menus.</p>
+                  </div>
+                  <span class="project-tag-badge">UI/UX Mobile App</span>
+                </div>
+              </article>
+            </a>
+
+            <article class="project-card interactive-hover mix-target" data-category="web">
+              <div class="project-banner bg-gradient-2">
+                <div class="mock-ui-layer"><i class="fas fa-heartbeat"></i></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-details">
+                  <h3>Medicare Web Platform</h3>
+                  <p>A health management software dashboard featuring real-time telemetry panels.</p>
+                </div>
+                <span class="project-tag-badge">Web Design</span>
+              </div>
+            </article>
+
+            <article class="project-card interactive-hover mix-target" data-category="branding">
+              <div class="project-banner bg-gradient-3">
+                <div class="mock-ui-layer"><i class="fas fa-video"></i></div>
+              </div>
+              <div class="project-meta">
+                <div class="project-details">
+                  <h3>Save The Date Video Branding</h3>
+                  <p>Custom production posters, typography layout framing, and typography design sheets.</p>
+                </div>
+                <span class="project-tag-badge">Branding / Identity</span>
+              </div>
+            </article> -->
+
+          </div>
+        </div>
+
+        <div class="center" style="margin-top: 60px;">
+          <a href="index.html#work" class="btn btn-ghost"><i class="fas fa-arrow-left" style="margin-right: 8px; margin-left: 0;"></i> Back to Home</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-base-row">
+      <p class="mono">Ibrahim Anas &copy; 2026 | UI/UX Designer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

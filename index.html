@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | Ibrahim Anas</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="welcome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader-spinner"></div>
+    <span class="loading-text mono">Initializing Interface Systems...</span>
+  </div>
+
+  <div class="welcome-glow-field" id="welcomeGlow"></div>
+  <div class="ambient-particles" id="particleCanvas"></div>
+
+  <main class="welcome-container" id="welcomeContainer">
+    <div class="welcome-centerpiece">
+      <h1 class="welcome-title">
+        <span class="line-small animate-drop-slow">WELCOME</span>
+        <span class="line-small animate-drop-slow">TO THE</span>
+        <span class="line-large gradient-mint animate-drop-slow-delayed">PORTFOLIO</span>
+      </h1>
+      
+      <div class="action-frame animate-popup-slow">
+        <a href="#" class="enter-btn" id="enterBtn">
+          <span class="btn-text">Enter Interface</span>
+          <span class="btn-arrow"><i class="fas fa-chevron-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* ==========================================================================
+   WELCOME PAGE — CYBER EMERALD / MINT THEME (AT CREATION ENGINE)
+   ========================================================================== */
+
+/* --- Dark Theme Variable Base Rules --- */
+[data-theme="dark"] {
+  --bg: #050B08;
+  --surface: #0C1712;
+  --surface-cards: #14241D;
+  --footer-bg: #0e1c15; 
+  --text-main: #FFFFFF;
+  --text-muted: #CBE3D7;
+  --primary: #00F5A0;
+  --primary-hover: #00FFD8;
+  --border-line: rgba(0, 245, 160, 0.15);
+  --neon-color: rgba(0, 245, 160, 0.2);
+  --input-bg: #0f1f17;
+}
+
+/* --- High-Contrast Balanced Light Theme Variable Map --- */
+[data-theme="light"] {
+  --bg: #e7fff3;
+  --surface: #cdf0de;
+  --surface-cards: #DCEDE5;
+  --footer-bg: #e6f2ec; 
+  --text-main: #062316;
+  --text-muted: #1B4D36;
+  --primary: #00A86B;
+  --primary-hover: #008056;
+  --border-line: rgba(0, 168, 107, 0.12);
+  --neon-color: rgba(0, 168, 107, 0.06);
+  --input-bg: #EFF7F4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* --- Premium Loading Overlay Design --- */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.loading-overlay.active-loading {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.loader-spinner {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--border-line);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spinLoader 0.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.loading-text {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+@keyframes spinLoader {
+  to { transform: rotate(360deg); }
+}
+
+/* --- Container Fade-Out Exit Modifier --- */
+.welcome-container {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  z-index: 3;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.welcome-container.exit-stage {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* --- Interactive Radial Mouse Glow & Particles --- */
+.welcome-glow-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(circle 300px at var(--mouse-x, 50%) var(--mouse-y, 50%), var(--neon-color), transparent 80%);
+}
+
+.ambient-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  background: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.25;
+  animation: floatUp 7s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(105vh) scale(0); opacity: 0; }
+  50% { opacity: 0.35; }
+  100% { transform: translateY(-5vh) scale(1); opacity: 0; }
+}
+
+/* --- Typography Framework --- */
+.welcome-title {
+  line-height: 0.95;
+  margin-bottom: 60px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-small {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(10px, 1.1vw, 13px);
+  font-weight: 400;
+  letter-spacing: 16px;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.line-large {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(65px, 14vw, 160px);
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.gradient-mint {
+  background: linear-gradient(135deg, var(--text-main) 0%, var(--primary) 70%, var(--primary-hover) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mono {
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* --- Snappy Entrance Pipelines --- */
+.animate-drop-slow {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: megaDropDownIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+}
+
+.animate-drop-slow-delayed {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: megaDropDownIn 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+@keyframes megaDropDownIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-popup-slow {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: megaElasticPopup 1s cubic-bezier(0.25, 1.4, 0.4, 1) 0.5s forwards;
+}
+
+@keyframes megaElasticPopup {
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- Interactive Geometric Theme Button --- */
+.action-frame {
+  display: flex;
+  justify-content: center;
+}
+
+.enter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  text-decoration: none;
+  color: var(--text-main);
+  background: var(--surface);
+  border: 1px solid var(--border-line);
+  padding: 16px 38px;
+  border-radius: 50px; /* Structured crisp tech alignment */
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.enter-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 245, 160, 0.1), transparent);
+  transition: all 0.6s ease;
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--primary);
+  color: var(--bg);
+  border-radius: 15px;
+  font-size: 10px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.enter-btn:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 30px var(--neon-color);
+  transform: translateY(-2px);
+  background: var(--surface-cards);
+}
+
+.enter-btn:hover::before { left: 100%; }
+
+.enter-btn:hover .btn-arrow {
+  transform: translateX(4px);
+  background: var(--primary-hover);
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Anas | UI/UX Designer & Web Developer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="neon-glow-field" id="neonGlowField"></div>
+
+  <header class="header-main page-entry-node" data-anim="drop-down" id="navbar">
+    <nav class="container nav-inner">
+      <div class="logo">ANAS<span class="dot">.</span></div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#work" class="nav-item">Project</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-right-actions">
+        <a href="#contact" class="hire-btn nav-item">Hire me</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+          <span class="mode-icon">☀️</span>
+        </button>
+        <button class="hamburger" id="menuToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="sections-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid-single">
+        <div class="hero-content">
+          <div class="hero-eyebrow anim-target page-entry-node" data-anim="pop-up">
+            <span class="mono">Creative Designer</span>
+          </div>
+          
+          <h1 class="hero-title anim-target page-entry-node" data-anim="slide-left">
+            Hello, I'm <br> <span class="accent-name">IBRAHIM ANAS</span>
+          </h1>
+
+          <p class="hero-sub anim-target page-entry-node" data-anim="slide-right">
+            I specialize in visually user-friendly interfaces, seamlessly blending design aesthetics with intuitive functionality. My expertise lies in creating digital experiences that resonate with users.
+          </p>
+          
+          <div class="hero-actions anim-target page-entry-node" data-anim="pop-up">
+            <a href="#work" class="btn btn-primary nav-item loop-float">
+              <span>View My Works</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="RESUME.pdf" class="btn btn-ghost loop-float">
+              <span>Download CV</span>
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+          
+          <div class="social-row anim-target page-entry-node" data-anim="drop-down">
+            <a href="mailto:anas07860313@gmail.com" class="social-icon" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/message/R7E34N7U3DTII1" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/in/ibrahim-anas" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator-container anim-target" id="scrollIndicator">
+        <span class="scroll-lbl-text">Scroll More</span>
+        <i class="fas fa-chevron-down scroll-arrow-icon"></i>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual initial-morph-focus anim-target">
+            <div class="avatar-frame">
+              <div class="avatar"></div>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <div class="about-title-inline">
+              <h2 class="hero-title anim-target page-entry-node" style="font-size: 42px; color: var(--primary); margin-bottom: 1px;">Summary</h2>
+            </div>
+            <h1 style="color: var(--text-main);">I AM,</h1>
+            
+            <div class="typing-container large-typing-header anim-target">
+              <span id="typingTarget" class="typing-text gradient-text"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+
+            <p class="about-summary-paragraph anim-target">
+              I am a passionate UI/UX Designer and Web Developer dedicated to crafting visually appealing and user-friendly digital experiences. With a keen eye for design aesthetics and a strong understanding of user behavior, I specialize in creating interfaces that seamlessly blend form and function. My goal is to deliver innovative solutions that enhance user engagement and satisfaction across various platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-extended-meta">
+          <div class="meta-layout-column">
+            <div class="info-column anim-target">
+              <h3 class="info-col-heading"><i class="fas fa-graduation-cap col-vector"></i><span>Education</span></h3>
+              <div class="timeline-block">
+                <div class="timeline-item interactive-hover">
+                  <span class="timeline-date mono">2023 - 2026</span>
+                  <h4>Bachelor of Computer Application (BCA)</h4>
+                  <p>Alvas Educational Foundation, Mangalore University</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-column anim-target" style="margin-top: 40px;">
+              <h3 class="info-col-heading"><i class="fas fa-briefcase col-vector"></i><span>Experience</span></h3>
+              <div class="timeline-block">
+                <div class="timeline-item interactive-hover">
+                  <span class="timeline-date mono">Internship</span>
+                  <h4>Web Designer</h4>
+                  <p><strong>Zephyr Technology Pvt. Ltd.</strong> — HTML5 & CSS3 layouts.</p>
+                </div>
+                <div class="timeline-item interactive-hover">
+                  <span class="timeline-date mono">Internship</span>
+                  <h4>UI/UX Designer</h4>
+                  <p><strong>Zephyr Technology Pvt. Ltd.</strong> — UI/UX design & prototyping </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-layout-column">
+            <div class="info-column side-certifications anim-target">
+              <h3 class="info-col-heading"><i class="fas fa-award col-vector"></i><span>Certifications</span></h3>
+              <div class="modern-cert-card interactive-hover">
+                <div class="cert-item">
+                  <div class="cert-badge-icon"><i class="fas fa-certificate"></i></div>
+                  <div class="cert-details">
+                    <h4>Certified UI-UX Designer</h4>
+                    <p class="mono">Zephyr Technology Pvt. Ltd.</p>
+                  </div>
+                </div>
+                <div class="cert-item" style="margin-top: 15px;">
+                  <div class="cert-badge-icon"><i class="fas fa-certificate"></i></div>
+                  <div class="cert-details">
+                    <h4>Certified Full-Stack Web Designer</h4>
+                    <p class="mono">Zephyr Technology Pvt. Ltd.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-column anim-target" style="margin-top: 40px;">
+              <h3 class="info-col-heading"><i class="fas fa-screwdriver-wrench col-vector"></i><span>Tools & Soft Skills</span></h3>
+              <div class="tools-matrix-grid-3x3">
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="html.png" alt="HTML5" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">HTML5</span>
+                </div>
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="css.png" alt="CSS3" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">CSS3</span>
+                </div>
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="figma.png" alt="Figma" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">Figma</span>
+                </div>
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="illustrator.png" alt="Illustrator" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">Illustrator</span>
+                </div>
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="photoshop.png" alt="Photoshop" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">Photoshop</span>
+                </div>
+                <div class="matrix-card-node interactive-hover">
+                  <div class="matrix-asset-wrapper"><img src="canva.png" alt="Canva" class="matrix-fluid-img"></div>
+                  <span class="matrix-label">Canva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS SECTION (CLEAN INTRODUCTORY PORTAL) -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="works-intro-wrapper center anim-target" style="max-width: 700px; margin: 0 auto;">
+          <div class="works-visual-icon" style="font-size: 50px; color: var(--primary); margin-bottom: 20px;">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h2 class="section-title" style="font-size: 44px; margin-bottom: 15px;">Project Showcase</h2>
+          <p class="section-subtitle" style="font-size: 16px; margin-bottom: 35px; line-height: 1.7;">
+            Check out some of my recent projects and see how I bring ideas to life through designs.
+          </p>
+          
+          <div class="view-more-container">
+            <a href="project.html" class="btn btn-primary loop-float" style="padding: 16px 40px; border-radius: 30px; font-size: 16px;">
+              <span>View Work</span>
+              <i class="fas fa-rocket" style="margin-left: 10px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-top-heading anim-target">
+          <h2 class="hero-title" style="color: var(--primary); font-size: 46px; margin-bottom: 40px; text-align: left;">
+            <i class="far fa-comments" style="margin-right: 15px;"></i>Let's Talk
+          </h2>
+        </div>
+
+        <div class="container contact-grid">
+          <div class="contact-left anim-target">
+            <h2 class="contact-title">Let's Build Something Amazing!</h2>
+            <p class="contact-desc" style="color: var(--text-muted); margin-top: 15px; font-size: 12px; margin-bottom: 30px;">
+              I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Whether you have a specific project in mind or just want to say hello, feel free to reach out. Let's connect and explore how we can create something amazing together!
+            </p>
+            
+            <div class="contact-sidebar-info">
+              <div class="sidebar-info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <p>anas07860313@gmail.com</p>
+                </div>
+              </div>
+              <div class="sidebar-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span>Location</span>
+                  <p>Manjeshwar, Kerala, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right anim-target">
+            <form class="contact-form inputs-professional-style" id="portfolioContactForm" action="https://formspree.io/f/xrewzadz" method="POST">
+              <div class="input-group">
+                <label for="formName">Full Name</label>
+                <input type="text" id="formName" name="name" placeholder="" required />
+              </div>
+              <div class="input-group">
+                <label for="formEmail">Gmail</label>
+                <input type="email" id="formEmail" name="email" placeholder="" required />
+              </div>
+              <div class="input-group">
+                <label for="formMessage">Message</label>
+                <textarea id="formMessage" name="message" rows="5" placeholder="" required></textarea>
+              </div>
+              <div class="form-btn-row">
+                <button type="submit" class="btn btn-submit-pro" id="formSubmitBtn"><span class="btn-text">Send Message</span><i class="fas fa-paper-plane" style="margin-left: 10px;"></i></button>
+              </div>
+              <div id="formStatusMessage"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid-layout">
+      <div class="footer-brand-column anim-target">
+        <div class="logo">ANAS<span class="dot">.</span></div>
+        <p class="footer-brand-desc">
+        let's connect and explore the possibilities of creating
+        <br> something extraordinary together. Reach out to me via
+        <br> email, social media, or the contact form above.
+        <br> I look forward to collaborating with you!
+        </p>
+        
+        <div class="footer-social-row multi-line-icons">
+          <a href="https://wa.me/message/R7E34N7U3DTII1" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://linkedin.com/in/ibrahim-anas" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com/mr.4naaz" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.behance.net/anasthalakki1" target="_blank" class="social-icon" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          <a href="https://dribbble.com/anas-thalakki" target="_blank" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          <a href="https://github.com/Ibra-anax" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-column anim-target">
+        <h4 class="footer-col-title mono">Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero" class="nav-item">Home Index</a></li>
+          <li><a href="#about" class="nav-item">About Summary</a></li>
+          <li><a href="#work" class="nav-item">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-column anim-target">
+        <h4 class="footer-col-title mono">System Endpoints</h4>
+        <ul class="footer-links-list">
+          <li><a href="mailto:anas07860313@gmail.com">Secure Email Channel</a></li>
+          <li><a href="#contact" class="nav-item">Initiate Contact Intake</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-base-row">
+      <p class="mono">Ibrahim Anas &copy; 2026 | UI/UX Designer</p>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll Up Button Trigger Node -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
